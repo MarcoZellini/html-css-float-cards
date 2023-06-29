@@ -5,12 +5,17 @@
     font-family: 'Fredoka', sans-serif;
 }
 
+/* #region var-color */
+
 :root {
     --fc-white: #fffffe;
     --fc-title: #e53170;
     --fc-dark: #0f0e17; 
     --fc-blue: #22c9ee;
+    --fc-lightgray: #edeaeb;
 }
+
+/* #endregion var-color */
 
 /* #region utilities */
 
@@ -31,8 +36,6 @@ body {
 h1 {
     color: var(--fc-title);
 }
-
-
 
 /* #endregion commons */
 
@@ -65,6 +68,7 @@ h1,
     margin-right: 1rem;
     box-shadow: 0 0 1rem lightgrey;
     background-color: var(--fc-dark);
+    height: 100px;
 }
 
 /* #region col-img */
@@ -87,10 +91,7 @@ h1,
     font-size: 0.9rem;
     width: calc(100% - 100px);
     height: 100px;
-    /* background-color: var(--fc-dark); */
     color: var(--fc-white);
-/*     
-    padding: 1.2rem 0 */
 }
 
 .col-info *{
@@ -98,17 +99,19 @@ h1,
     display: block;
 }
 
+.col-info span {
+    color: var(--fc-lightgray);
+}
+
 .col-info a {
     color: var(--fc-blue);
     text-decoration: none;
 }
 
-/* #endregion info */
+/* #endregion col-info */
 
 
 /* #endregion col */
-
-
 
 
 /* #endregion row */
