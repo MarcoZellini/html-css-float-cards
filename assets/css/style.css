@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region utilities */
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* #endregion utilities */
+
+
+/* #region container */
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;
+}
+
+h1, 
+.container > p {
+    text-align: center;
+}
+
+/* #region row */
+
+/* #region col */
+
+.col {
+    float: left;
+    width: calc(100%/3);
+}
+
+/* #endregion col */
+
+
+
+
+/* #endregion row */
+
+
+/* #endregion container */
