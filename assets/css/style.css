@@ -51,7 +51,7 @@ h1 {
 h1, 
 .container > p{
     text-align: center;    
-    margin: 2rem;
+    margin: 2rem 0;
 }
 
 /* #region row */
@@ -66,10 +66,13 @@ h1,
     float: left;
     width: calc(100%/3 - 2rem);
     margin: 0 1rem;
-    box-shadow: 0 0 1rem lightgrey;
-    background-color: var(--fc-dark);
-    height: 100px;
 }
+
+
+.card {
+    box-shadow: 0 0 1rem lightgrey;
+}
+
 
 /* #region col-img */
 
@@ -80,6 +83,7 @@ h1,
 
 .col-img img {
     width: 100%;
+    display: block;
 }
 
 /* #endregion col-img */
@@ -90,12 +94,12 @@ h1,
     float: left;
     font-size: 0.9rem;
     width: calc(100% - 100px);
-    height: 100px;
     color: var(--fc-white);
+    background-color: var(--fc-dark);
 }
 
 .col-info *{
-    padding: 0.7rem .5rem 0 1rem;
+    padding: 0.7rem .5rem .25rem 1rem;
     display: block;
 }
 
